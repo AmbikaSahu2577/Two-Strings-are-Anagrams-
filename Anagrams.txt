@@ -1,0 +1,27 @@
+import java.util.Arrays;
+class Anagrams
+{
+	public static void main(String[] args) 
+	{
+		String str1 = "silent";
+		String str2 = "listen";
+        
+        char a[] = str1.toCharArray();
+        char b[] = str2.toCharArray();
+
+        Arrays.sort(a); 
+        Arrays.sort(b); 
+
+        boolean result = Arrays.equals(a,b);
+
+        if (result==true) 
+        {
+          System.out.println("String are anagrams");	
+        }
+        else
+        {
+           System.out.println("String are not anagrams");	
+        }
+        
+	}
+}
